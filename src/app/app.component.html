@@ -1,0 +1,16 @@
+<app-home></app-home>
+
+<div>
+  @for (post of posts; track $index) {
+    <div class="card">
+      <p>{{post.author_fullname}}</p>
+      <p>{{post.title}}</p>
+      <img class="img" src="{{post.thumbnail}}" alt="">
+      <span>{{post.score}}</span>
+      
+    </div>
+  }
+</div>
+
+<app-slave></app-slave>
+<router-outlet />
