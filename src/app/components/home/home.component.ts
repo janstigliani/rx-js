@@ -13,18 +13,18 @@ export class HomeComponent {
   commServ = inject(CommunicationService)
 
   changeReSbj() {
-    const newString = "normalSubject" + Date.now;
-    this.commServ.sbj.next(newString);
+    const newString = "normalSubject" + Date.now();
+    this.commServ.reSbj.next(newString);
   }
 
   changeBSbj() {
-    const newString = "BehaviourSubject" + Date.now;
+    const newString = "BehaviourSubject" + Date.now();
     this.commServ.bSbj.next(newString);
   }
 
   changeSbj() {
-    const newString = "ReplaySubject" + Date.now;
-    this.commServ.reSbj.next(newString);
+    const newString = "ReplaySubject" + Date.now();
+    this.commServ.sbj.next(newString);
   }
 
   
